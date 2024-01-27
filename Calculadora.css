@@ -1,0 +1,158 @@
+body {
+  display: flex;
+  background-color: #5f9ea0;
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.titulo {
+  background-color: bisque;
+  padding: 0.5rem;
+  width: 42%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.cuerpoCalculadora {
+  background-color: #7cde4b;
+  width: 40%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 2rem;
+  align-items: center;
+}
+
+.pantalla {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  background-color: #2bac1a;
+}
+
+.pantalla :first-child {
+  box-sizing: border-box;
+  height: 50%;
+  background-color: #ffffff;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.pantalla :last-child {
+  box-sizing: border-box;
+  height: 50%;
+  background-color: #ffffff;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  /*
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  */
+  /* Valor para top-left, top-right, bottom-right, bottom-left */
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.cal {
+  display: flex;
+  width: 100%;
+  height: 70%;
+}
+
+.parentesis {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  height: 100%;
+  justify-content: space-around;
+  padding: 0.7rem 0 0.7rem 0.7rem;
+  gap: 0.5rem;
+}
+
+.Bcolumnas {
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.3rem;
+  gap: 0.5rem;
+}
+
+.botonesCal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+.boton {
+  background-color: #189d80;
+  width: 100%;
+  color: aliceblue;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.boton:hover {
+  background-color: #2980b9;
+  color: #ecf0f1;
+  cursor: pointer;
+}
+
+.boton:active {
+  background-color: #0b2b41;
+  color: #ecf0f1;
+  transform: scale(1.1);
+}
+
+.botonP {
+  height: 100%;
+  background-color: #fdc857;
+  color: #2fcf9d;
+}
+
+.botonF {
+  background-color: #ffffff;
+  color: #2fcf9d;
+}
+
+#igual {
+  width: 85%;
+  height: 10%;
+}
+
+#cadena {
+  font-family: monospace;
+  font-weight: 600;
+  color: #189d80;
+}
+
+#resultado {
+  font-family: monospace;
+  color: #5f9ea0;
+}
